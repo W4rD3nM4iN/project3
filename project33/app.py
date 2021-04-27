@@ -69,6 +69,9 @@ def stats():
 
     return render_template('history.html', urls=urls)
 
+@app.route('/billy')
+def billy():
+    return render_template('billy.html')
 
 def connect_db():
     conn = sqlite3.connect('database.db')
